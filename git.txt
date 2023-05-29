@@ -1,0 +1,84 @@
+Note:- Agar koi file ya folder empty hai to use git track nahi karega.
+
+---------------
+Some imp Commands in git
+----------------
+1) git status =>to check weather a repository is git or not.
+
+2) git init => to make a repo as git repo if it is not.
+
+3) git add --a => to put all repo in staging area.
+
+4) git commit -m "user message" 
+
+5) git log (to see all commits).
+
+6)rm -rf .git (ye particular repo se apna control hata lega)
+
+ 
+-----------------------
+to download a git repo 
+ -----------------------
+7)git clone url
+
+----------------------
+to rename downloaded repo
+-------------------------
+
+8)git clone url changedname
+
+9)we create .gitignore file and whatever we write in it is not tracked.(for example if  we have a log file having name as log.txt and i don't want to track it than I will create .gitignore file using touch.gitignore and will write log.txt in that file so that log.txt will not be tracked.)
+
+10)git diff (compare karta hai working directory aur staging area ko);
+
+
+11)git diff --staged (ye compare karta hai staging area ko purane wale commit se )
+
+
+12)git commit -a -m "Direct commit" (Aapki saari TRACKED FILES ko change karke unka commit banata hai)
+
+13)git rm third.txt (It will delete third.txt)
+
+14)git mv first.txt first_renamed.txt (ye command first.txt ko rename karke first_renamed.txt kar dega).
+
+15)git rm --cached db.accdb (agar accdb ko git ignore me dalte hai aur fir track karte hai to bhi db.accdb ko track karta hai isliye usko bahar ke tracking se bachane ke liye ye  command chalate hai.)
+
+
+------------------------
+basic linux command
+------------------------
+pwd = present working directory
+ls = list content of a folder
+cd = change directory
+touch = generate a blank file 
+
+
+
+--------------------------------------
+publishing projects on github
+--------------------------------------
+git config --global user.name rajesh
+git config --global user.email rajesh.mandal123@gmail.com
+git init
+git add .
+git commit -m "Initial commit"
+git status 
+ssh-keygen -t rsa -b 4096 -c 'your email'
+tail <path to id_rsa.pub> # Add this key to your Github account
+git remote add origin <ssh url.git>
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

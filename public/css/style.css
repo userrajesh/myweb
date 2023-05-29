@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    padding: 2% 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links {
+    text-align: right;
+    text-align: right;
+    width: 80%;
+    float: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #85e5f6;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "FontAwesome";
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background-color: #f44336;
+}
+nav .icon {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        /* position: absolute; */
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .icon {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 22px;
+    }
+    .nav-links u {
+        padding: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.course {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.why-choose {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: large;
+    font-style: italic;
+    font-family: serif;
+}
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.row-whychoose {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.course-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    background: #fff3f3;
+}
+.why-choose-col {
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+-------------------Campus CSS--------------- */ .campus {
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
+.campus-col {
+    flex-basis: 32%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+/* technoloty we use CSS 
+     */
+
+.techuse {
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
+.techuse-col {
+    flex-basis: 31%;
+    overflow: hidden;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.techuse-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.techuse-col p {
+    padding: 0;
+}
+
+.techuse-col h3 {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* testimonial */
+.testinomials {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.testimonial-col {
+    flex-basis: 42%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #111215;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img {
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: 1s;
+}
+
+.testimonial-col p {
+    padding: 10px;
+}
+.testimonial-col h3 {
+    text-align: left;
+    margin-top: 0;
+    padding-left: 8px;
+}
+@media (max-width: 700px) {
+    .testimonial-col img {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+.call-to-action {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.call-to-action h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    .call-to-action h1 {
+        font-size: 24px;
+    }
+}
+/* ------------------footer CSS starts here -----------------} */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-basis: 40%;
+}
+.footer h4 {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.fa {
+    padding: 15px;
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* ...............about us CSS starts here........  */
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1 {
+    margin-top: 100px;
+}
+.aboutus {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about-col h1 {
+    padding-top: 0;
+}
+.about-col p {
+    padding: 15px 0 25px;
+}
+.red-btn {
+    border: 1px solid #f44336;
+    background-color: transparent;
+    color: #f44336;
+}
+.about-col a:hover {
+    color: #fff;
+}
+
+.blog-left {
+    flex-basis: 42%;
+}
+.blog-left img {
+    width: 100%;
+}
+.blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left p {
+    color: #999;
+    padding: 0;
+}
+.blog-right h3 {
+    flex-basis: 32%;
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.blog-right div span {
+    margin: 5px;
+}
+.blog-right div:hover {
+    background-color: #f44336;
+}
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    background-color: white;
+}
+.comment-box h3 {
+    text-align: left;
+}
+.comment-form textarea,
+.comment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px 0;
+    box-sizing: border-box;
+    border: aliceblue;
+    border: 1px solid darkgray;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+
+.comment-form button {
+    margin: 10px 0px;
+}
+.red-btn:hover {
+    color: white;
+}
+@media (max-width: 700px) {
+    .sub-header h1 {
+        font-size: 24px;
+    }
+    .logo {
+        width: 31px;
+        height: 31px;
+        margin-top: 10px;
+    }
+}
+
+#contactForm span .fa {
+    color: green;
+    padding-left:3px;
+}
+#contactForm span .fa-exclamation-circle {
+    color: red;
+    padding-left:3px;
+}
+/* contact styling  */
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;  
+}
+.location iframe {
+    width: 100%;
+}
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.contact-col div .fa {
+    padding-top:0px;
+    font-size: 28px;
+    color: #f44336;
+}
+
+.contact-col div p {
+    font-size: 10px;
+    padding:0px;
+    margin-top: 0px;
+    color:red;
+}
+.contact-col div h5 {
+
+    font-size: 10px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0px;;
+}
+.contact-col input,
+.contact-col textarea {
+    min-width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: small;
+}
+.bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: zoom 4s linear infinite;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.5);
+
+        overflow: hidden;
+    }
+    15% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+        overflow: hidden;
+    }
+}
+
+.intermediate {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: 80px;
+}
+
+.read-more-text {
+    display: none;
+}
+.show {
+    display: block;
+}
+.why-choose-us {
+    position: absolute;
+    z-index: -4;
+    left: 0;
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 10%;
+    height: fit-content;
+}
+.tech-we-use {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+.item {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+}
+.tech-we-use .item .layer {
+    position: relative;
+    bottom: 0;
+    transition: 0.5s;
+}
+.tech-we-use .item:hover {
+    color: red;
+    border: 2px solid red;
+}
+.what-we-do-img {
+    position: absolute;
+    left: 0;
+    top: 150vh;
+    z-index: -3;
+}
+@media (max-width: 400px) {
+    .tech-we-use {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+        column-gap: 0px;
+    }
+}
+
+.row-testinomial {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+.newsletter .email-sub {
+    margin: 10px 4px 20px 62px;
+    width: 400px;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+}
+.newsletter button {
+    margin: 10px 4px 20px 2px;
+    padding: 2px 5px;
+}
+.copy-right {
+    background-color: #222;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.footer-icons {
+    margin: auto;
+}
+.quick-links {
+    text-align: center;
+}
+.foot-link {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.about-sub-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/services.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+}
+
+.services-sub-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/services1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+}
+.blog-sub-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(/images/blog.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+}
+.contact-sub-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(/images/contactus.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+}
+#mainheading{
+    font-size: medium;
+}
